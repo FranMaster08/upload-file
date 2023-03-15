@@ -26,3 +26,6 @@ CREATE TABLE `videos` (
   `uptade_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `video-upload`.`usuarios` (`id`, `name`, `lastname`, `address`, `email`, `password`) VALUES ('1', 'Cristian', 'Moyano', 'Calle falsa 1234', 'tr@gmail.com', '1234');
+
