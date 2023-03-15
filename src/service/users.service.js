@@ -1,6 +1,9 @@
+import { connection } from "../config/index.js";
+
 const userService = {
   findAll: async () => {
-    return [];
+    const [rows] = await connection.query("SELECT * FROM usuarios");
+    return rows;
   },
   findOne: async (id) => {
     return {};
