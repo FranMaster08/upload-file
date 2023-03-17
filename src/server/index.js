@@ -1,4 +1,3 @@
-import { config } from "dotenv";
-config();
 import app from "./app.js";
-app.listen(3000, () => console.log(`listen in port ${3000}`));
+import envs from '../config/config-env.js';
+app.listen(envs.port, () => console.log(`listen in port ${envs.port}`));
